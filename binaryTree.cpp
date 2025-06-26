@@ -148,6 +148,22 @@ class BinaryTree
         cout << "5. Exit" << endl;
         cout << "\nEnter your choice (1-5) : ";
 
-       
+        char ch;
+        cin >> ch;
+        cout << endl;
+
+        switch (ch)
+        {
+        case '1':
+        {
+            x.insert();
+            break;
+        }
+        case '2':
+        {
+            x.inorder(x.ROOT);
+            break;
+        }
+        
     }
 }
