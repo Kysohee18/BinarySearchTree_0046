@@ -131,7 +131,9 @@ class BinaryTree
             }
         }
 
-       
+        bool isEmpty(){
+            return ROOT == nullptr;
+        }
         
 
    }
