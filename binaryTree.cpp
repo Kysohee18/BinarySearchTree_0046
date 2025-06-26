@@ -108,8 +108,20 @@ class BinaryTree
             inorder(ptr->rightchild);
         };
 
-       
+        void preorder(Node *ptr){
+            if(isEmpty()){
+                cout << "Three is empty" << endl;
+                return;
+            }
+            if(ptr == nullptr){
+                return;
+            }
+            cout << ptr->info << " ";
+            preorder(ptr->leftchild);
+            preorder(ptr->rightchild);
         }
+
+        
         
 
    }
