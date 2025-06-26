@@ -121,7 +121,17 @@ class BinaryTree
             preorder(ptr->rightchild);
         }
 
-        
+        void postorder(Node *ptr){
+            if(isEmpty()){
+                cout << "Three is empty" << endl;
+                return;
+            }
+            if (ptr == nullptr){
+                return;
+            }
+        }
+
+       
         
 
    }
