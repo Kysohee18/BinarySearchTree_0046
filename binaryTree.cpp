@@ -81,7 +81,18 @@ class BinaryTree
         }
         void search (int element, Node *parent, Node *&currentNOde)
         {
-            
+            // this function searche the curret node the specified node 
+            currentNOde = ROOT;
+            parent = nullptr;
+            while ((currentNOde != nullptr) &&(currentNOde->info != element))
+            {
+                parent = currentNOde;
+                if(element < currentNOde->info)
+                    currentNOde = currentNOde->leftchild;
+                else 
+                currentNOde = currentNOde->rightchild;
+            }
+
         }
 
 }
