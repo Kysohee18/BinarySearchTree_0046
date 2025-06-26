@@ -11,5 +11,17 @@ public:
     Node *rightchild;
 
     //contructor for the node class
+    Node()
+    {
+        leftchild = nullptr; //initialize leftchild to null
+        rightchild = nullptr;
+    }
+
+};
+
+class BinaryTree
+{
+    public:
+        Node *ROOT;
 
 }
